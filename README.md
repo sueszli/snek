@@ -30,7 +30,7 @@ until then, we can use some workarounds:
 - superset programming languages [^superset1] [^superset2]
 	- still in their infancy.
 - different python implementations, like jit interpreters
-	- usually ~4x faster when single-threaded [^PyPy] but not parallel and very constrained.
+	- usually ~4x faster when single-threaded [^PyPy] [^numba] but not parallel and very constrained.
 - the `multiprocessing` standard library
 	- high call overhead, (de)serialization overhead, resource overhead.
 - mixing c/c++ code with python
@@ -121,3 +121,4 @@ links:
 [^setuptools]: https://setuptools.pypa.io/
 [^PyPy]: https://www.pypy.org/index.html
 [^edge]: https://github.com/mattip/c_from_python/blob/master/c_from_python.ipynb
+[^numba]: https://numba.pydata.org/
