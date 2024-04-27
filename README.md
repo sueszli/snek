@@ -23,7 +23,7 @@ the cpython interpreter is already pretty good at io-bound tasks through async/a
 
 but the GIL (global interpreter lock) hinders thread-parallelism in cpu-bound tasks.
 
-you currently can only achieve parallelism in python through multiprocessing, which is not ideal for many use-cases.
+you currently can only achieve parallelism in python through multiprocessing, which is not ideal for many data intensive use-cases.
 
 the community is actively working on this by either trying to introduce multiple sub-interpreters [^subint1] [^subint2] or making the GIL optional [^nogil1] [^nogil2] [^nogil3].
 
