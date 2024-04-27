@@ -53,7 +53,6 @@ this is very simple, straightforward and the intended way to write parallel code
 
 links:
 
-- more convenient library: https://github.com/uqfoundation/multiprocess
 - https://docs.python.org/3/library/multiprocessing.html (same api as `threading`, so they're interchangable)
 - https://docs.python.org/3/library/concurrent.futures.html (same functionality but more java-like)
 
