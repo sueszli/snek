@@ -37,9 +37,7 @@ until then, we can use some workarounds:
 	- a) extending cpython: fastest, but hard to implement. 🔥
 	- b) ctypes: signifiantly slower, but a lot easier to implement.
 
-<br><br>
-
-## 1) multiprocessing
+# 1) multiprocessing
 
 when using the `multiprocessing` library in python, we can call multiple system processes that each come with their own seperate python interpreter, GIL and memory space.
 
@@ -56,9 +54,7 @@ links:
 - https://docs.python.org/3/library/multiprocessing.html (same api as `threading`, so they're interchangable)
 - https://docs.python.org/3/library/concurrent.futures.html (same functionality but more java-like)
 
-<br><br>
-
-## 2) extending cpython (c extension modules) 🔥
+# 2) extending cpython (c extension modules) 🔥
 
 works by extending cpython with modules in which the gil is manually released. we can then call those modules in multithreaded python code.
 
@@ -74,9 +70,7 @@ links:
 
 - https://docs.python.org/3/extending/
 
-<br><br>
-
-## 3) ctypes (foreign function interface)
+# 3) ctypes (foreign function interface)
 
 writing a shared library in c (or any other language providing a c interface [^nogolang]) and then calling it from multithreaded python code.
 
@@ -91,9 +85,7 @@ links:
 - https://docs.python.org/3/library/ctypes.html
 - https://cffi.readthedocs.io/en/stable/overview.html#main-mode-of-usage
 
-<br><br>
-
-## reference
+# references
 
 - inspiration: https://snarky.ca/programming-language-selection-is-a-form-of-premature-optimization/
 
